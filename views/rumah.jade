@@ -1,0 +1,105 @@
+extends layout
+
+block content
+	.container.blue-text.text-darken-3.center
+		h4= rumah.nama_rumah
+		h4= 'Start from IDR ' + rumah.harga
+
+	.container.blue-text.text-darken-3.center
+		.row
+			.col.l6.s12
+				iframe(src= rumah.video_url ,allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='', width='100%', height='315', frameborder='0')
+			.col.l6.s12.right-align
+				h6= 'Location: ' + rumah.location
+				h6= 'Capacity: ' + rumah.capacity
+				h6 What you'll get:
+				h6= rumah.desc
+		.row
+			.col.l12.s12
+				center
+					- for (var i = 1; i <= 5; ++i) {
+						img.materialboxed.limit3(src='images/product_thumb/rumah'+ rumah.id_rumah + '_' + i +'.png',alt='Not Available')
+					- }
+		.row
+			.col.l12.s12
+				h4 Main Facilities:
+
+	.parallax-container2.valign-wrapper.blue.darken-3
+			.section.no-pad-bot
+				.container
+					.row.center
+						.col.l2.s2
+							h5.header.col.s12.light
+								i.material-icons.white-text hot_tub
+							p Private Bathroom
+						.col.l2.s2
+							h5.header.col.s12.light
+								i.material-icons.white-text weekend
+							p Living room
+						.col.l2.s2
+							h5.header.col.s12.light
+								i.material-icons.white-text local_cafe
+							p Coffee Bar
+						.col.l2.s2
+							h5.header.col.s12.light
+								i.material-icons.white-text local_drink
+							p Mineral Water
+						.col.l2.s2
+							h5.header.col.s12.light
+								i.material-icons.white-text directions_car
+							p Parking
+						.col.l2.s2
+							h5.header.col.s12.light
+								i.material-icons.white-text panorama
+							p View
+	.container.center.blue-text.text-darken-3
+		form
+			p Book for (nights):
+			input.input-field.center-align.blue-text.text-darken-3(type='number', name='malam', style='max-width: 200px;border-bottom: 1px solid #1565C0;')
+			br
+			a#house.btn.waves-effect.blue.darken-3.white-text.cok(type='submit') Submit
+		p Or
+		a#find.btn.waves-effect.blue.darken-3.white-text.cok(href="/house") Find More
+	br
+	br
+	br
+
+	footer.page-footer.blue.darken-3
+		.container
+			.row
+				.col.l6.s12
+					h5.white-text About Us
+					p.grey-text.text-lighten-4
+						| ​Founded in 2018, Increvel is a startup ​focuses on MICE industry that providing local experience through homestay and trip services for better local empowerment through tourism
+				.col.l3.s12
+					h5.white-text Find Us!
+					h6.white-text hr@increvel.com
+				.col.l3.s12
+					h5.white-text Our Social Media
+					ul
+						.container
+							li
+								a.white-text(href='#!')
+									h6
+										i.fa.fa-instagram
+										|   Increvel
+							li
+								a.white-text(href='#!')
+									h6
+										i.fa.fa-facebook
+										|    Increvel
+							li
+								a.white-text(href='#!')
+									h6
+										i.fa.fa-youtube
+										|   Increvel
+		.footer-copyright
+			.container
+				| Made with ♥ by
+				a.brown-text.text-lighten-3(href='http://materializecss.com') MaterializeCSS
+				|  | PT. Jelajah Pesona Indonesia
+
+
+	script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+	script(src='javascripts/materialize.js')
+	script(src='javascripts/init.js')

@@ -1,0 +1,59 @@
+extends layout
+
+block content
+	.container.blue-text.text-darken-3.center
+		.row
+			.col.l12.s12
+				h4 Find your adventure now!
+				form
+					p Search by name:
+					input.input-field.center-align.blue-text.text-darken-3(type='text', name='rumah', style='max-width: 500px;border-bottom: 1px solid #1565C0;')
+					br
+					a#house.btn.waves-effect.blue.darken-3.white-text.cok(type='submit') Submit
+				p Or search it in fun way:
+				.carousel
+					each val in rumah
+						a.carousel-item(href='/house?id='+ val.id_rumah)
+							img.responsive-img.limit2(src='images/rumah'+ val.id_rumah + '.png',alt='Not Available')
+							span.isi= '/house?id='+ val.id_rumah
+				center
+					a#book.btn.waves-effect.blue.darken-3.white-text.cok Book now
+
+	footer.page-footer.blue.darken-3
+		.container
+			.row
+				.col.l6.s12
+					h5.white-text About Us
+					p.grey-text.text-lighten-4
+						| ​Founded in 2018, Increvel is a startup ​focuses on MICE industry that providing local experience through homestay and trip services for better local empowerment through tourism
+				.col.l3.s12
+					h5.white-text Find Us!
+					h6.white-text hr@increvel.com
+				.col.l3.s12
+					h5.white-text Our Social Media
+					ul
+						.container
+							li
+								a.white-text(href='#!')
+									h6
+										i.fa.fa-instagram
+										|   Increvel
+							li
+								a.white-text(href='#!')
+									h6
+										i.fa.fa-facebook
+										|    Increvel
+							li
+								a.white-text(href='#!')
+									h6
+										i.fa.fa-youtube
+										|   Increvel
+		.footer-copyright
+			.container
+				| Made with ♥ by
+				a.brown-text.text-lighten-3(href='http://materializecss.com') MaterializeCSS
+				|  | PT. Jelajah Pesona Indonesia
+
+	script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+	script(src='javascripts/materialize.js')
+	script(src='javascripts/init.js')

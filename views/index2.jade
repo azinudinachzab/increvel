@@ -1,0 +1,127 @@
+extends layout2
+
+block content
+		.slider
+			ul.slides
+				li
+					img(src='images/slider2.jpg')
+					.caption.center-align.black-text.text-darken-2
+						h4 Guarantee your local experience through houses and trips
+				li
+					img(src='images/slider4.jpg')
+					.caption.center-align.white-text.text-darken-4
+						h3 Welcome to our trip!
+						h5.light.white-text.text-darken-4 An authentic trip combines traveling and local living
+				li
+					img(src='images/slider3.jpg')
+					.caption.center-align.white-text.text-darken-4
+						h3 Welcome to Our House!
+						h5.light.white-text.text-darken-4 Meet verified and trained host who offers local hospitality through their houses
+				li
+					img(src='images/slider1.jpg')
+					.caption.center-align.white-text.text-darken-4
+						h4
+							| Discover more about Indonesia's
+							br
+							|  local wisdom through our
+							br
+							|  authentic trips.
+		.container
+			.section
+				// Icon Section
+				.row.blue-text.text-darken-3
+					.col.s12.m4
+						.icon-block
+							h2.center.blue-text.text-darken-3
+								i.material-icons terrain
+							h5.center Travellers
+							p.center +200 travellers from around the world.
+					.col.s12.m4
+						.icon-block
+							h2.center.blue-text.text-darken-3
+								i.material-icons group
+							h5.center Local Partners
+							p.center +30 housing and trip partners
+					.col.s12.m4
+						.icon-block
+							h2.center.blue-text.text-darken-3
+								i.material-icons place
+							h5.center Areas
+							p.center +10 spots all around Indonesia
+		.parallax-container2.valign-wrapper.blue.darken-3
+			.section.no-pad-bot
+				.container
+					.row.center
+						h5.header.col.s12.light Find Your Adventures:
+		.container
+			.carousel
+				each val in rumah
+					a.carousel-item(href='/house?id='+ val.id_rumah)
+						img.responsive-img.limit2(src='images/rumah'+ val.id_rumah + '.png',alt='Not Available')
+						span.isi= '/house?id='+ val.id_rumah
+			center
+				a#book.btn.waves-effect.blue.darken-3.white-text.cok Book now
+		.container
+			.section
+				.row.blue-text.text-darken-3
+					.col.s12.center
+						h3
+							i.mdi-content-send
+						h4 Our Team
+		.container
+			.section
+				// Icon Section
+				.row.blue-text.text-darken-3
+					.col.s12.m4
+						.icon-block
+							img(style='width: 100%;height: 100%;', src='images/dina.png')
+							h5.center Dina Ardiyanti
+							p.center Chief Executive Officer
+					.col.s12.m4
+						.icon-block
+							img(style='width: 100%;height: 100%;', src='images/azin.png')
+							h5.center Azinudin Achzab
+							p.center Co-founder
+					.col.s12.m4
+						.icon-block
+							img(style='width: 100%;height: 100%;', src='images/kelik.png')
+							h5.center Kelik Sumarahadi
+							p.center Chief Product Officer
+		footer.page-footer.blue.darken-3
+			.container
+				.row
+					.col.l6.s12
+						h5.white-text About Us
+						p.grey-text.text-lighten-4
+							| ​Founded in 2018, Increvel is a startup ​focuses on MICE industry that providing local experience through homestay and trip services for better local empowerment through tourism
+					.col.l3.s12
+						h5.white-text Find Us!
+						h6.white-text hr@increvel.com
+					.col.l3.s12
+						h5.white-text Our Social Media
+						ul
+							.container
+								li
+									a.white-text(href='#!')
+										h6
+											i.fa.fa-instagram
+											|   Increvel
+								li
+									a.white-text(href='#!')
+										h6
+											i.fa.fa-facebook
+											|    Increvel
+								li
+									a.white-text(href='#!')
+										h6
+											i.fa.fa-youtube
+											|   Increvel
+			.footer-copyright
+				.container
+					| Made with ♥ by
+					a.brown-text.text-lighten-3(href='http://materializecss.com') MaterializeCSS
+					|  | PT. Jelajah Pesona Indonesia
+		// Scripts
+		script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+		script(src='javascripts/materialize.js')
+		script(src='javascripts/init.js')

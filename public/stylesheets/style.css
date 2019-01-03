@@ -1,0 +1,128 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+.isi{
+  visibility: hidden;
+}
+
+.isi2{
+  overflow: hidden;
+}
+
+.cok3{
+  margin-bottom: 10px !important;
+}
+
+.limit{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.limit2{
+  height: 400px !important;
+}
+
+.limit3{
+  width: 20%;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  height: 100px;
+  float: left;
+}
+
+.cok{
+
+  margin-top: 10px;
+
+}
+
+.cok2{
+  padding-left: 50px;
+  padding-right: 60px;
+}
+
+.slides li img {
+  background-attachment: fixed;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 5px;
+    width: 20%;
+    height: 20%;
+}
+
+.logo>img {
+    vertical-align: middle
+}
+}
+
+.navsearch{
+ padding-left: 10px;
+ margin-bottom: 3px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #999;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #1565C0;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container2 {
+  min-height: 100px;
+  line-height: 0;
+  height: 100px;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+  .parallax-container2 .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

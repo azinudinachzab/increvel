@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Increvel
+		// CSS
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(href='stylesheets/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+	body
+		nav.white(role='navigation')
+			.nav-wrapper.container
+				a#logo-container.brand-logo.left(href='/')
+					img.logo(src='images/logo.png', alt='Logo')
+				ul#nav-mobile.sidenav
+					li
+						form
+							.input-field
+								input#search_mobile.blue-text.text-darken-3(type='text', placeholder='Search something here...', required='')
+					li
+						.container
+							center
+								img.circle.responsive-img.limit(src='images/pp.png')
+					li
+						p.blue-text.text-darken-3.center Photo dan Nama Profile
+					li
+						a.blue-text.text-darken-3(href='#!') Home
+					li.divider
+					li
+						a.blue-text.text-darken-3(href='#!') Profile
+					li.divider
+					li
+						a.blue-text.text-darken-3(href='#!') My Booking
+					li.divider
+					li
+						a.blue-text.text-darken-3(href='#!') My Inbox
+					li.divider
+					li
+						a.blue-text.text-darken-3(href='#!') About us
+				a.sidenav-trigger(href='#', data-target='nav-mobile')
+					i.material-icons menu
+				ul.right.hide-on-med-and-down
+					// <li><a href="#">Navbar Link</a></li>
+					li
+						i#search_button.material-icons.blue-text.text-darken-3 search
+					li
+						form
+							.input-field
+								input#search.blue-text.text-darken-3(type='text', required='')
+					li
+						i#close.material-icons.blue-text.text-darken-3 close
+					li
+						a.dropdown-trigger.blue-text.text-darken-3(href='#!', data-target='dropdown1')
+							| Menu
+							i.material-icons.right arrow_drop_down
+				ul#dropdown1.dropdown-content
+					li
+						.container
+							img.circle.responsive-img.cok2(src='images/pp.png')
+					li
+						p.blue-text.text-darken-3.center Photo dan Nama Profile
+					li
+						a.blue-text.text-darken-3(href='#!') Home
+					li.divider
+					li
+						a.blue-text.text-darken-3(href='#!') Profile
+					li.divider
+					li
+						a.blue-text.text-darken-3(href='#!') My Booking
+					li.divider
+					li
+						a.blue-text.text-darken-3(href='#!') My Inbox
+					li.divider
+					li
+						a.blue-text.text-darken-3(href='#!') About us
+		block content
